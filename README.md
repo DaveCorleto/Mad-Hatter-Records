@@ -1,39 +1,94 @@
 # Mad Hatter Records
 
-Personal music project and portfolio website built to showcase original compositions and creative audio work.
+Music portfolio website built to showcase original compositions, guitar-driven ideas and creative audio projects.
 
-## 🔧 Tech Stack
+## 🌐 Live Demo
 
-* HTML / CSS
-* Node.js (Express)
-* Firebase Hosting
-* Google Cloud Run (backend API)
-* Git & GitHub
+👉 https://mad-hatter-records.web.app
+
+---
+
+## 🧠 Overview
+
+This project combines a static frontend with a backend API to deliver dynamic content in a simple and scalable way.
+
+It represents a practical exercise in structuring and deploying a small full-stack application on Google Cloud.
+
+---
 
 ## 🏗 Architecture
 
-* Static frontend deployed on Firebase Hosting (`/public`)
-* Backend API (`/gear-api`) deployed on Cloud Run
-* Frontend fetches gear data dynamically from the API
+* **Frontend** → Static website served via Firebase Hosting
+* **Backend API** → Node.js (Express) service deployed on Google Cloud Run
+* **Communication** → Frontend fetches data dynamically from the API
 
-## 🚀 Live Demo
+```
+[ Browser ]
+     ↓
+[ Firebase Hosting ]
+     ↓
+[ Cloud Run API ]
+```
 
-https://mad-hatter-records.web.app
+---
+
+## ⚙️ Tech Stack
+
+* HTML / CSS
+* JavaScript (Vanilla)
+* Node.js (Express)
+* Firebase Hosting
+* Google Cloud Run
+* Git & GitHub
+
+---
 
 ## 📁 Project Structure
 
-* `/public` → frontend (static website)
-* `/gear-api` → backend API (Node.js)
-* `firebase.json` → hosting configuration
+```
+/
+├── public/        # Static frontend (HTML, CSS, JS)
+├── gear-api/      # Backend API (Node.js)
+├── firebase.json  # Firebase configuration
+├── .firebaserc    # Firebase project settings
+```
+
+---
+
+## 🚀 Running Locally
+
+### Frontend
+
+Serve the static files:
+
+```bash
+cd public
+# open index.html or use a local server
+```
+
+### Backend
+
+```bash
+cd gear-api
+npm install
+node server.js
+```
+
+---
 
 ## 💡 Purpose
 
 This project was built to:
 
 * practice cloud deployment workflows
-* structure a full-stack project (frontend + API)
-* create a clean and deployable personal portfolio
+* structure a simple full-stack architecture
+* integrate frontend and backend components
+* create a deployable personal portfolio
+
+---
+
 
 ## 👤 Author
 
-Davide Corleto
+**Davide Corleto**
+
