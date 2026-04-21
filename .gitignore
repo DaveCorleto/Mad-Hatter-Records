@@ -1,0 +1,4 @@
+gear-api/node_modules/
+node_modules/
+.env
+.DS_Store

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css?v=21">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <title>Contact — Mad Hatter Records</title>
+</head>
+<body>
+
+  <div class="site-bg">
+    <div class="site-bg__layer site-bg__layer--1 is-active"></div>
+    <div class="site-bg__layer site-bg__layer--2"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand__name" href="index.html">Mad Hatter Records</a>
+      <span class="brand__tagline" data-i18n="brand.tagline"></span>
+    </div>
+
+    <nav class="nav-desktop" aria-label="Primary navigation">
+      <ul class="nav-desktop__list">
+        <li><a class="nav-desktop__link" href="index.html" data-i18n="nav.home"></a></li>
+        <li><a class="nav-desktop__link" href="records.html" data-i18n="nav.records"></a></li>
+        <li><a class="nav-desktop__link" href="about.html" data-i18n="nav.bio"></a></li>
+        <li><a class="nav-desktop__link" href="gear.html" data-i18n="nav.gear"></a></li>
+        <li><a class="nav-desktop__link is-active" href="contact.html" data-i18n="nav.contact"></a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switcher">
+      <span class="lang-switcher__icon" aria-hidden="true">
+        <i class="fa-solid fa-language"></i>
+      </span>
+      <label for="lang-select" class="visually-hidden">Language</label>
+      <select id="lang-select" aria-label="Language selector">
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+      </select>
+    </div>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+        <li><a class="mobile-menu__link" href="index.html" data-i18n="nav.home"></a></li>
+        <li><a class="mobile-menu__link" href="records.html" data-i18n="nav.records"></a></li>
+        <li><a class="mobile-menu__link" href="about.html" data-i18n="nav.bio"></a></li>
+        <li><a class="mobile-menu__link" href="gear.html" data-i18n="nav.gear"></a></li>
+        <li><a class="mobile-menu__link is-active" href="contact.html" data-i18n="nav.contact"></a></li>
+      </ul>
+
+      <div class="lang-switcher lang-switcher--mobile">
+        <label for="lang-select-mobile" class="visually-hidden">Language</label>
+        <select id="lang-select-mobile" aria-label="Mobile language selector">
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <p class="hero__kicker" data-i18n="contactPage.hero.kicker"></p>
+      <h1 class="hero__title" data-i18n="contactPage.hero.title"></h1>
+      <p class="hero__subtitle" data-i18n="contactPage.hero.subtitle"></p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-card">
+        <div class="contact-card__intro">
+          <p class="contact-card__eyebrow" data-i18n="contactPage.card.eyebrow"></p>
+          <h2 class="contact-card__title" data-i18n="contactPage.card.title"></h2>
+          <p class="contact-card__text" data-i18n="contactPage.card.text"></p>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/xjgaygzw"
+          method="POST"
+          novalidate
+          data-rate-limit-seconds="60"
+          data-min-fill-seconds="4"
+        >
+          <div class="contact-form__hidden" aria-hidden="true">
+            <label for="_gotcha" data-i18n="contactPage.form.honeypotLabel"></label>
+            <input
+              type="text"
+              id="_gotcha"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            >
+          </div>
+
+          <input type="hidden" id="form-loaded-at" name="form_loaded_at" value="">
+          <input type="hidden" name="_subject" value="New message from Mad Hatter Records">
+
+          <div class="contact-form__grid">
+            <div class="form-field">
+              <label for="name" data-i18n="contactPage.form.nameLabel"></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                data-i18n-placeholder="contactPage.form.namePlaceholder"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="email" data-i18n="contactPage.form.emailLabel"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                data-i18n-placeholder="contactPage.form.emailPlaceholder"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="subject" data-i18n="contactPage.form.subjectLabel"></label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              data-i18n-placeholder="contactPage.form.subjectPlaceholder"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="message" data-i18n="contactPage.form.messageLabel"></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              data-i18n-placeholder="contactPage.form.messagePlaceholder"
+              required
+            ></textarea>
+          </div>
+
+          <div class="contact-form__actions">
+            <div
+              class="cf-turnstile"
+              data-sitekey="0x4AAAAAACowCE9bHs8DiyP-"
+              data-theme="light"
+            ></div>
+
+            <button type="submit" class="contact-form__button" id="contact-submit" data-i18n="contactPage.form.submitButton">
+            </button>
+
+            <p class="contact-form__status" id="form-status" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <div
+          id="contact-success"
+          class="contact-success"
+          hidden
+          aria-live="polite"
+        >
+          <h3 class="contact-success__title" data-i18n="contactPage.success.title"></h3>
+          <p class="contact-success__text" data-i18n="contactPage.success.text"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-notes">
+      <div class="contact-notes__grid">
+        <article class="contact-note">
+          <h3 class="contact-note__title" data-i18n="contactPage.notes.collaborations.title"></h3>
+          <p class="contact-note__text" data-i18n="contactPage.notes.collaborations.text"></p>
+        </article>
+
+        <article class="contact-note">
+          <h3 class="contact-note__title" data-i18n="contactPage.notes.responseTime.title"></h3>
+          <p class="contact-note__text" data-i18n="contactPage.notes.responseTime.text"></p>
+        </article>
+
+        <article class="contact-note">
+          <h3 class="contact-note__title" data-i18n="contactPage.notes.direct.title"></h3>
+          <p class="contact-note__text" data-i18n="contactPage.notes.direct.text"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">
+      © <span id="year"></span> Mad Hatter Records · <a href="privacy.html" data-i18n="footer.privacy"></a>
+    </p>
+  </footer>
+
+  <script>
+    async function loadLanguage(lang) {
+      const res = await fetch(`/lang/${lang}.json`);
+      const translations = await res.json();
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const value = key.split(".").reduce((obj, k) => obj?.[k], translations);
+        if (!value) return;
+
+        if (value.includes("<")) {
+          el.innerHTML = value;
+        } else {
+          el.textContent = value;
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        const value = key.split(".").reduce((obj, k) => obj?.[k], translations);
+        if (value) el.setAttribute("placeholder", value);
+      });
+
+      document.documentElement.lang = lang;
+      localStorage.setItem("lang", lang);
+
+      const desktopSelect = document.getElementById("lang-select");
+      const mobileSelect = document.getElementById("lang-select-mobile");
+
+      if (desktopSelect) desktopSelect.value = lang;
+      if (mobileSelect) mobileSelect.value = lang;
+    }
+
+    const savedLang = localStorage.getItem("lang") || "en";
+    loadLanguage(savedLang);
+
+    const langSelect = document.getElementById("lang-select");
+    const langSelectMobile = document.getElementById("lang-select-mobile");
+
+    if (langSelect) {
+      langSelect.addEventListener("change", async (e) => {
+        await loadLanguage(e.target.value);
+      });
+    }
+
+    if (langSelectMobile) {
+      langSelectMobile.addEventListener("change", async (e) => {
+        await loadLanguage(e.target.value);
+      });
+    }
+  </script>
+
+  <script src="contact.js"></script>
+</body>
+</html>

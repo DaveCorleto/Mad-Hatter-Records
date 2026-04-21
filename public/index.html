@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Mad Hatter Records">
+  <meta property="og:description" content="Music, production and tools — a personal platform built on Google Cloud.">
+  <meta property="og:image" content="https://madhatterrecords.web.app/images/preview.jpg">
+  <meta property="og:url" content="https://madhatterrecords.web.app">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mad Hatter Records">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Mad Hatter Records</title>
+</head>
+
+<body>
+
+  <div class="site-bg">
+    <div class="site-bg__layer site-bg__layer--1 is-active"></div>
+    <div class="site-bg__layer site-bg__layer--2"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand__name" href="index.html">Mad Hatter Records</a>
+      <span class="brand__tagline" data-i18n="brand.tagline"></span>
+    </div>
+
+    <nav class="nav-desktop" aria-label="Primary navigation">
+      <ul class="nav-desktop__list">
+        <li><a class="nav-desktop__link is-active" href="index.html" data-i18n="nav.home"></a></li>
+        <li><a class="nav-desktop__link" href="records.html" data-i18n="nav.records"></a></li>
+        <li><a class="nav-desktop__link" href="about.html" data-i18n="nav.bio"></a></li>
+        <li><a class="nav-desktop__link" href="gear.html" data-i18n="nav.gear"></a></li>
+        <li><a class="nav-desktop__link" href="contact.html" data-i18n="nav.contact"></a></li>
+      </ul>
+    </nav>
+
+  <div class="lang-switcher">
+    <span class="lang-switcher__icon" aria-hidden="true">
+      <i class="fa-solid fa-language"></i>
+    </span>
+
+    <label for="lang-select" class="visually-hidden">Language</label>
+
+    <select id="lang-select" aria-label="Language selector">
+      <option value="en">English</option>
+      <option value="it">Italiano</option>
+    </select>
+  </div>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+        <li><a class="mobile-menu__link is-active" href="index.html" data-i18n="nav.home"></a></li>
+        <li><a class="mobile-menu__link" href="records.html" data-i18n="nav.records"></a></li>
+        <li><a class="mobile-menu__link" href="about.html" data-i18n="nav.bio"></a></li>
+        <li><a class="mobile-menu__link" href="gear.html" data-i18n="nav.gear"></a></li>
+        <li><a class="mobile-menu__link" href="contact.html" data-i18n="nav.contact"></a></li>
+      </ul>
+
+      <div class="lang-switcher lang-switcher--mobile">
+        <label for="lang-select-mobile" class="visually-hidden">Language</label>
+        <select id="lang-select-mobile" aria-label="Mobile language selector">
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section class="hero">
+      <p class="hero__kicker" data-i18n="home.hero.kicker"></p>
+
+      <h1 class="hero__title" data-i18n="home.hero.title"></h1>
+
+      <p class="hero__subtitle" data-i18n="home.hero.subtitle"></p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="records.html" data-i18n="home.hero.primaryCta"></a>
+        <a class="btn btn--ghost" href="gear.html" data-i18n="home.hero.secondaryCta"></a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Site sections">
+
+      <a class="card card--link" href="records.html" data-i18n-aria-label="home.cards.records.ariaLabel">
+        <h2 class="card__title" data-i18n="home.cards.records.title"></h2>
+        <p class="card__text" data-i18n="home.cards.records.text"></p>
+        <span class="card__link" data-i18n="home.cards.records.link"></span>
+      </a>
+
+      <a class="card card--link" href="gear.html" data-i18n-aria-label="home.cards.gear.ariaLabel">
+        <h2 class="card__title" data-i18n="home.cards.gear.title"></h2>
+        <p class="card__text" data-i18n="home.cards.gear.text"></p>
+        <span class="card__link" data-i18n="home.cards.gear.link"></span>
+      </a>
+
+      <a class="card card--link" href="about.html" data-i18n-aria-label="home.cards.bio.ariaLabel">
+        <h2 class="card__title" data-i18n="home.cards.bio.title"></h2>
+        <p class="card__text" data-i18n="home.cards.bio.text"></p>
+        <span class="card__link" data-i18n="home.cards.bio.link"></span>
+      </a>
+
+    </section>
+
+    <section class="now">
+      <h2 class="now__title" data-i18n="home.now.title"></h2>
+      <p class="now__text" data-i18n="home.now.text1"></p>
+      <p class="now__text" data-i18n="home.now.text2"></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">
+      © <span id="year"></span> Mad Hatter Records · <a href="privacy.html" data-i18n="footer.privacy"></a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    const images = [
+      "images/hero1.webp",
+      "images/hero2.webp",
+      "images/hero3.webp"
+    ];
+
+    let index = 0;
+    let showingFirst = true;
+
+    const bg1 = document.querySelector(".site-bg__layer--1");
+    const bg2 = document.querySelector(".site-bg__layer--2");
+
+    if (bg1 && bg2) {
+      bg1.style.backgroundImage = `url('${images[0]}')`;
+      bg2.style.backgroundImage = `url('${images[1]}')`;
+
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        const nextImage = images[index];
+
+        if (showingFirst) {
+          bg2.style.backgroundImage = `url('${nextImage}')`;
+          bg2.classList.add("is-active");
+          bg1.classList.remove("is-active");
+        } else {
+          bg1.style.backgroundImage = `url('${nextImage}')`;
+          bg1.classList.add("is-active");
+          bg2.classList.remove("is-active");
+        }
+
+        showingFirst = !showingFirst;
+      }, 6500);
+    }
+  </script>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const body = document.body;
+    const mobileMenuLinks = document.querySelectorAll(".mobile-menu__link");
+
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open");
+        body.classList.toggle("menu-open", isOpen);
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+          body.classList.remove("menu-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
+
+  <script>
+  async function loadLanguage(lang) {
+    const res = await fetch(`/lang/${lang}.json`);
+    const translations = await res.json();
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      const value = key.split(".").reduce((obj, k) => obj?.[k], translations);
+      if (!value) return;
+
+      if (value.includes("<")) {
+        el.innerHTML = value;
+      } else {
+        el.textContent = value;
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+      const key = el.getAttribute("data-i18n-aria-label");
+      const value = key.split(".").reduce((obj, k) => obj?.[k], translations);
+      if (value) el.setAttribute("aria-label", value);
+    });
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+
+    const desktopSelect = document.getElementById("lang-select");
+    const mobileSelect = document.getElementById("lang-select-mobile");
+
+    if (desktopSelect) desktopSelect.value = lang;
+    if (mobileSelect) mobileSelect.value = lang;
+  }
+
+  const savedLang = localStorage.getItem("lang") || "en";
+  loadLanguage(savedLang);
+
+  const langSelect = document.getElementById("lang-select");
+  const langSelectMobile = document.getElementById("lang-select-mobile");
+
+  if (langSelect) {
+    langSelect.addEventListener("change", (e) => {
+      loadLanguage(e.target.value);
+    });
+  }
+
+  if (langSelectMobile) {
+    langSelectMobile.addEventListener("change", (e) => {
+      loadLanguage(e.target.value);
+    });
+  }
+</script>
+
+</body>
+</html>

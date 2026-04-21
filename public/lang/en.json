@@ -1,0 +1,167 @@
+{
+  "brand": {
+    "tagline": "Alternative • Intimate • Recording"
+  },
+  "nav": {
+    "home": "Home",
+    "records": "Records",
+    "bio": "Bio",
+    "gear": "Gear",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Alternative rock with weight and space",
+      "title": "In search of<br>Authentic Sound",
+      "subtitle": "Mad Hatter Records is a personal recording space focused on direct and authentic music, with attention to tone, space and atmosphere.",
+      "primaryCta": "Listen",
+      "secondaryCta": "Explore Gear"
+    },
+    "cards": {
+      "records": {
+        "title": "Records",
+        "text": "Released tracks, sketches and studio experiments from the project.",
+        "link": "Open Records",
+        "ariaLabel": "Open Records page"
+      },
+      "gear": {
+        "title": "Gear",
+        "text": "Guitars, amplifiers and tools used to shape the Mad Hatter Records sound.",
+        "link": "View Gear",
+        "ariaLabel": "Open Gear page"
+      },
+      "bio": {
+        "title": "Bio",
+        "text": "The story and creative direction behind the project.",
+        "link": "Read Bio",
+        "ariaLabel": "Open Bio page"
+      }
+    },
+    "now": {
+      "title": "Current direction",
+      "text1": "The project moves between alternative rock and intimate studio recording.",
+      "text2": "Layered guitars, imperfect performances and raw amplifier tones shape the sound."
+    }
+  },
+  "footer": {
+    "privacy": "Privacy"
+  },
+  "records": {
+    "hero": {
+      "kicker": "Music and recordings",
+      "title": "Records",
+      "subtitle": "A collection of recordings, sketches and studio experiments from Mad Hatter Records."
+    },
+    "releasedTracks": {
+      "title": "Released Tracks",
+      "text": "Guitar-driven pieces and atmospheric recordings from the Mad Hatter studio.",
+      "embedTitle": "Mad Hatter Records SoundCloud playlist"
+    },
+    "latestVideo": {
+      "title": "Latest Studio Video",
+      "text": "Studio sessions, guitar explorations and recording experiments.",
+      "embedTitle": "Mad Hatter Records YouTube playlist"
+    }
+  },
+  "privacyPage": {
+    "hero": {
+      "kicker": "Privacy and cookies",
+      "title": "Privacy",
+      "subtitle": "This website is a simple presentation site for Mad Hatter Records."
+    },
+    "content": {
+      "title": "Data and cookies",
+      "text1": "This website does not directly collect personal data through forms, accounts or analytics tools.",
+      "text2": "Some embedded third-party content, such as YouTube and SoundCloud players, may use cookies or collect data according to their own privacy policies.",
+      "text3": "By interacting with those players, you may provide data to those third-party services.",
+      "text4": "YouTube and SoundCloud manage their own content and privacy practices independently."
+    }
+  },
+  "gearPage": {
+    "hero": {
+      "kicker": "Studio tools and instruments",
+      "title": "Gear",
+      "subtitle": "A selection of instruments and tools used in Mad Hatter Records."
+    },
+    "states": {
+      "loadingTitle": "Loading gear",
+      "loadingText": "Fetching instruments...",
+      "emptyTitle": "No gear yet",
+      "emptyText": "The gear collection is currently empty.",
+      "errorTitle": "Gear unavailable",
+      "errorText": "The gear list could not be loaded at the moment.",
+      "otherCategory": "Other"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "kicker": "Collaborations • Production • Creative inquiries",
+      "title": "Let’s get in touch",
+      "subtitle": "If you want to talk about a collaboration, a recording project, a custom track, or simply ask a question, feel free to send a message."
+    },
+    "card": {
+      "eyebrow": "Mad Hatter Records",
+      "title": "Send a message",
+      "text": "I’m always open to meaningful projects, artistic collaborations, and creative conversations. Fill out the form below and I’ll reply as soon as possible."
+    },
+    "form": {
+      "honeypotLabel": "Leave this field empty",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submitButton": "Send message",
+      "sendingButton": "Sending...",
+      "blocked": "Message blocked.",
+      "tooFast": "You are sending the form too quickly. Please wait a few seconds and try again.",
+      "waitBeforeNext": "Please wait {seconds} seconds before sending another message.",
+      "fillAllFields": "Please fill in all fields.",
+      "invalidEmail": "Please enter a valid email address.",
+      "messageTooShort": "Your message is too short.",
+      "sendingStatus": "Sending message...",
+      "successStatus": "Thanks. Your message has been sent.",
+      "errorStatus": "Something went wrong. Please try again later.",
+      "emailSubject": "New message from Mad Hatter Records"
+    },
+    "success": {
+      "title": "Message sent",
+      "text": "Thanks for reaching out. I’ll get back to you as soon as possible."
+    },
+    "notes": {
+      "collaborations": {
+        "title": "Collaborations",
+        "text": "Music production, recording ideas, custom tracks, arrangements, and creative partnerships."
+      },
+      "responseTime": {
+        "title": "Response time",
+        "text": "I usually reply as soon as possible. Some messages may take a little longer depending on current projects."
+      },
+      "direct": {
+        "title": "Direct and simple",
+        "text": "This form is the best way to get in touch without publicly exposing my email address."
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "kicker": "The person behind the project",
+      "title": "Bio",
+      "subtitle1": "Mad Hatter Records is the project studio of Dave Corleto.",
+      "subtitle2": "With a background in classical guitar, he gradually moved towards electric guitar, sound shaping and recording. Here, he creates music in a direct and honest way, avoiding overly constructed approaches and focusing on tone, space and atmosphere. An evolving path, driven by the search for authentic sound."
+    },
+    "content": {
+      "title": "About the project",
+      "text1": "Mad Hatter Records is a personal space to create music in a direct way, without unnecessary layers.",
+      "text2": "The focus is on sound, its character, and how it moves in space, without chasing predefined aesthetics.",
+      "text3": "More than showing technique, the project is about balance, identity and consistency."
+    },
+    "signature": {
+      "name": "Dave Corleto",
+      "meta": "Guitar · Recording · Sound"
+    }
+  }
+}
