@@ -1,25 +1,39 @@
-Sound. Guitars. Atmosphere.
-Mad Hatter Records is a small creative studio where modern rock,
-cinematic textures and experimental sound meet.
+# Mad Hatter Records
 
-The site showcases:
+Personal music project and portfolio website built to showcase original compositions and creative audio work.
 
-original music and sound ideas
-guitar-driven compositions and recordings
-creative audio projects and collaborations
-the philosophy behind my home recording studio
-Live Website
-The project is deployed with Firebase Hosting.
+## 🔧 Tech Stack
 
-Live version:
+* HTML / CSS
+* Node.js (Express)
+* Firebase Hosting
+* Google Cloud Run (backend API)
+* Git & GitHub
+
+## 🏗 Architecture
+
+* Static frontend deployed on Firebase Hosting (`/public`)
+* Backend API (`/gear-api`) deployed on Cloud Run
+* Frontend fetches gear data dynamically from the API
+
+## 🚀 Live Demo
+
 https://mad-hatter-records.web.app
 
-Technologies
-HTML
-CSS
-Firebase Hosting
-Git / GitHub
-About
+## 📁 Project Structure
 
-Author
+* `/public` → frontend (static website)
+* `/gear-api` → backend API (Node.js)
+* `firebase.json` → hosting configuration
+
+## 💡 Purpose
+
+This project was built to:
+
+* practice cloud deployment workflows
+* structure a full-stack project (frontend + API)
+* create a clean and deployable personal portfolio
+
+## 👤 Author
+
 Davide Corleto
