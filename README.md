@@ -8,6 +8,18 @@ Music portfolio website built to showcase original compositions, guitar-driven i
 
 ---
 
+## 📸 Preview
+
+### Homepage
+
+![Homepage](./assets/home.png)
+
+### Gear (API-driven content)
+
+![Gear](./assets/gear.png)
+
+---
+
 ## 🧠 Overview
 
 This project combines a static frontend with a backend API to deliver dynamic content in a simple and scalable way.
@@ -59,8 +71,6 @@ It represents a practical exercise in structuring and deploying a small full-sta
 
 ### Frontend
 
-Serve the static files:
-
 ```bash
 cd public
 # open index.html or use a local server
@@ -87,8 +97,8 @@ This project was built to:
 
 ---
 
-
 ## 👤 Author
 
-**Davide Corleto**
+Davide Corleto
+
 
