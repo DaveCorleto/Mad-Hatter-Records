@@ -11,14 +11,10 @@ Music portfolio website built to showcase original compositions, guitar-driven i
 ## 📸 Preview
 
 ### Homepage
-
-![Homepage](./assets/home.png)
+![Homepage](./screenshots/homepage-preview.png)
 
 ### Gear (API-driven content)
-
-![Gear](./assets/gear.png)
-
----
+![Gear](./screenshots/gear-preview.png)
 
 ## 🧠 Overview
 
