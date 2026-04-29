@@ -88,6 +88,6 @@ app.get("/api/gear", async (req, res) => {
 
 const port = process.env.PORT || 8080;
 
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
