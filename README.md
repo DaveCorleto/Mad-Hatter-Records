@@ -16,84 +16,89 @@ Music portfolio website built to showcase original compositions, guitar-driven i
 ### Gear (API-driven content)
 ![Gear](./screenshots/gear-preview.png)
 
+The Gear section is powered by a custom Node.js API.
+
+The service is:
+- containerized with Docker  
+- built via Google Cloud Build  
+- stored in Google Artifact Registry  
+- deployed on Google Cloud Run (serverless)  
+
+---
+
 ## 🧠 Overview
 
-This project combines a static frontend with a backend API to deliver dynamic content in a simple and scalable way.
+A simple but production-ready full-stack architecture on Google Cloud.
 
-It represents a practical exercise in structuring and deploying a small full-stack application on Google Cloud.
+Static frontend + containerized backend API, designed to deliver dynamic content in a scalable and maintainable way.
 
 ---
 
 ## 🏗 Architecture
 
-* **Frontend** → Static website served via Firebase Hosting
-* **Backend API** → Node.js (Express) service deployed on Google Cloud Run
-* **Communication** → Frontend fetches data dynamically from the API
-
-```
+* **Frontend** → Firebase Hosting  
+* **Backend API** → Node.js (Express) on Cloud Run  
+* **Storage** → Google Cloud Storage (images)  
+* **Communication** → REST API  
 [ Browser ]
-     ↓
+↓
 [ Firebase Hosting ]
-     ↓
+↓
 [ Cloud Run API ]
-```
+↓
+[ Cloud Storage ]
+
 
 ---
 
 ## ⚙️ Tech Stack
 
-* HTML / CSS
-* JavaScript (Vanilla)
-* Node.js (Express)
-* Firebase Hosting
-* Google Cloud Run
-* Git & GitHub
+* HTML / CSS  
+* JavaScript (Vanilla)  
+* Node.js (Express)  
+* Docker  
+* Google Cloud Run  
+* Google Cloud Build  
+* Google Artifact Registry  
+* Google Cloud Storage  
+* Firebase Hosting  
+* Git & GitHub  
+
+---
+
+## ⚙️ Deployment Workflow
+
+1. Code is pushed to GitHub  
+2. Docker image is built via Cloud Build  
+3. Image is stored in Artifact Registry  
+4. Cloud Run deploys the new revision  
 
 ---
 
 ## 📁 Project Structure
 
-```
+
 /
-├── public/        # Static frontend (HTML, CSS, JS)
-├── gear-api/      # Backend API (Node.js)
-├── firebase.json  # Firebase configuration
-├── .firebaserc    # Firebase project settings
-```
+├── public/ # Static frontend (HTML, CSS, JS)
+├── gear-api/ # Backend API (Node.js + Docker)
+├── firebase.json
+├── .firebaserc
+
 
 ---
 
 ## 🚀 Running Locally
 
-### Frontend
-
-```bash
-cd public
-# open index.html or use a local server
-```
-
 ### Backend
 
-```bash
 cd gear-api
 npm install
 node server.js
-```
+Frontend
+cd public
+# open index.html or use a local server
 
----
-
-## 💡 Purpose
-
-This project was built to:
-
-* practice cloud deployment workflows
-* structure a simple full-stack architecture
-* integrate frontend and backend components
-* create a deployable personal portfolio
-
----
-
-## 👤 Author
+👤 Author
 
 Davide Corleto
 
